@@ -1,3 +1,8 @@
+真似するな
+
 git add -p "ファイル名"
 git commit -m "メッセージ"
 git push -f origin main
+
+git fetch origin main
+git reset --hard origin/main
