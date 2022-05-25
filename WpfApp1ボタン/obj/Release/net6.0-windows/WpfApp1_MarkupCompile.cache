@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\shiom\Source\Repos\k019c1391\GradCreate\WpfApp1ボタン\obj\Debug\net6.0-windows\
+C:\Users\shiom\Source\Repos\k019c1391\GradCreate\WpfApp1ボタン\obj\Release\net6.0-windows\
 WpfApp1
 none
 false
-TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\Users\shiom\Source\Repos\k019c1391\GradCreate\WpfApp1ボタン\App.xaml
 11407045341
 

@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\shiom\Source\Repos\k019c1391\GradCreate\WpfApp4画面遷移\obj\Debug\net6.0-windows\
+C:\Users\shiom\Source\Repos\k019c1391\GradCreate\WpfApp4画面遷移\obj\Release\net6.0-windows\
 WpfApp4画面遷移
 none
 false
-TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\Users\shiom\Source\Repos\k019c1391\GradCreate\WpfApp4画面遷移\App.xaml
 44492615
 
