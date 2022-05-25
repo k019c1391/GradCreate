@@ -4,12 +4,20 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\shiom\Desktop\GradCreate\WpfApp1ボタン\obj\Release\net6.0-windows\
+=======
+C:\Users\shiom\Source\Repos\k019c1391\GradCreate\WpfApp1ボタン\obj\Release\net6.0-windows\
+>>>>>>> origin/main
 WpfApp1
 none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+<<<<<<< HEAD
 C:\Users\shiom\Desktop\GradCreate\WpfApp1ボタン\App.xaml
+=======
+C:\Users\shiom\Source\Repos\k019c1391\GradCreate\WpfApp1ボタン\App.xaml
+>>>>>>> origin/main
 11407045341
 
 3-1233169557

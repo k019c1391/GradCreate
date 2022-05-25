@@ -4,12 +4,20 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\shiom\Desktop\GradCreate\WpfApp4画面遷移\obj\Release\net6.0-windows\
+=======
+C:\Users\shiom\Source\Repos\k019c1391\GradCreate\WpfApp4画面遷移\obj\Release\net6.0-windows\
+>>>>>>> origin/main
 WpfApp4画面遷移
 none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+<<<<<<< HEAD
 C:\Users\shiom\Desktop\GradCreate\WpfApp4画面遷移\App.xaml
+=======
+C:\Users\shiom\Source\Repos\k019c1391\GradCreate\WpfApp4画面遷移\App.xaml
+>>>>>>> origin/main
 44492615
 
 6-554913713
