@@ -1,0 +1,84 @@
+﻿<Window x:Class="WpfApp6システムカラー.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6システムカラー"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl x:Name="tabControl">
+            <TabItem Header="Stackパネル">
+                <ScrollViewer Background="#FFE5E5E5">
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <!-- StackPanel用 テキストの規定スタイル -->
+                            <Style TargetType="TextBlock">
+                                <!-- コントロール間の余白 -->
+                                <Setter Property="Margin" Value="2,2,2,0" />
+                            </Style>
+                        </StackPanel.Resources>
+
+                        <!--#region テキスト定義1 -->
+
+                        <TextBlock Text="アクティブなウィンドウの境界線の色" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
+                        <TextBlock Text="アクティブなタイトルバーの背景色" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+                        <TextBlock Text="アクティブなウィンドウのタイトル バーのテキストの色" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" Foreground="White"/>
+                        <TextBlock Text="アプリケーション ワークスペースの色" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}"/>
+                        <TextBlock Text="3D 表示要素の表面の色" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+                        <TextBlock Text="3D 表示要素の影の色" Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"/>
+                        <TextBlock Text="3 次元表示要素の暗いシャドウの色" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Foreground="White"/>
+                        <TextBlock Text="3 次元の表示要素のライト色" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>
+                        <TextBlock Text="3 次元表示要素の強調表示の色" Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
+                        <TextBlock Text="3 次元表示要素のテキストの色" Background="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" Foreground="White"/>
+                        <TextBlock Text="デスクトップの色" Background="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Foreground="White"/>
+                        <TextBlock Text="アクティブなウィンドウのタイトル バーのグラデーションの右側の色" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}"/>
+                        <TextBlock Text="非アクティブなウィンドウのタイトル バーのグラデーションの右側の色" Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}"/>
+                        <TextBlock Text="使用できないテキストの色" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" Foreground="White"/>
+                        <TextBlock Text="選択した項目の背景色" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                        <TextBlock Text="選択した項目のテキストの色" Background="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>
+                        <TextBlock Text="TextBlock" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+
+                        <!--#endregion-->
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="Wrapパネル">
+                <WrapPanel Background="#FFE5E5E5">
+                    <WrapPanel.Resources>
+                        <!-- WrapPanel用 テキストの既定スタイル -->
+                        <Style TargetType="TextBlock">
+                            <!-- コントロール間の余白 -->
+                            <Setter Property="Margin" Value="2"/>
+                            <!-- コントロール内の余白 -->
+                            <Setter Property="Padding" Value="5,10"/>
+                        </Style>
+                    </WrapPanel.Resources>
+
+                    <!--#region テキスト定義2 -->
+
+                    <TextBlock Text="フォーカスされている項目の指定に使用する色" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" Foreground="White"/>
+                    <TextBlock Text="非アクティブなウィンドウの境界線の色" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}"/>
+                    <TextBlock Text="アクティブでないウィンドウのタイトル バーの背景色" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}"/>
+                    <TextBlock Text="非アクティブなウィンドウのタイトル バーのテキストの色" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionTextBrushKey}}" Foreground="White"/>
+                    <TextBlock Text="非アクティブな選択項目を強調表示するために使用される色" Background="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}"/>
+                    <TextBlock Text="非アクティブな選択項目のテキストの色" Background="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}}" Foreground="White"/>
+                    <TextBlock Text="ToolTip コントロールの背景色" Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}"/>
+                    <TextBlock Text="ToolTip コントロールのテキストの色" Background="{DynamicResource {x:Static SystemColors.InfoTextBrushKey}}" Foreground="White"/>
+                    <TextBlock Text="メニュー バーの背景色" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}"/>
+                    <TextBlock Text="メニューの背景色" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}"/>
+                    <TextBlock Text="メニュー項目の強調表示に使用する色" Background="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}"/>
+                    <TextBlock Text="メニューのテキストの色" Background="{DynamicResource {x:Static SystemColors.MenuTextBrushKey}}" Foreground="White"/>
+                    <TextBlock Text="スクロール バーの背景色" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}"/>
+                    <TextBlock Text="ウィンドウのクライアント領域の背景色" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+                    <TextBlock Text="ウィンドウ フレームの色" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" Foreground="White"/>
+                    <TextBlock Text="ウィンドウのクライアント領域のテキストの色" Background="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" Foreground="White"/>
+                    <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="TextBlock"/>
+                    <!--#endregion -->
+                    
+                </WrapPanel>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

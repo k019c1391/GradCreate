@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\K019C1391\Desktop\level0\WpfApp3\obj\Debug\net6.0-windows\
+C:\Users\shiom\Desktop\GradCreate\WpfApp3縦横ボタン\obj\Debug\net6.0-windows\
 WpfApp3
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\K019C1391\Desktop\level0\WpfApp3\App.xaml
+C:\Users\shiom\Desktop\GradCreate\WpfApp3縦横ボタン\App.xaml
 31130175450
 
 51778561094
 1942030480316
 MainWindow.xaml;Window1.xaml;Window2.xaml;
 
-False
+True
 
