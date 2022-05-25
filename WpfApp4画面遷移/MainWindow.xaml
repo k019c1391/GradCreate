@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp4画面遷移.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4画面遷移"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="141*"/>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="143*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="399*"/>
+            <ColumnDefinition Width="401*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Content="ダイアログ1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30" Click="dialogButton_Click"/>
+        <Button x:Name="button1" Content="ダイアログ2" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Width="150" Height="30" Click="dialogButton_Click"/>
+        <Button x:Name="button2" Content="次の画面に移動" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="150" Height="30" Click="button2_Click"/>
+        <Button x:Name="button3" Content="新しい画面表示" HorizontalAlignment="Center" Grid.Column="1"  Grid.Row="2" VerticalAlignment="Center" Width="150" Height="30" Click="button3_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="94,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
+    </Grid>
+</Window>
