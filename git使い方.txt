@@ -1,6 +1,6 @@
 真似するな
 
-git add -p "ファイル名"
+git add "ファイル名"
 git commit -m "メッセージ"
 git push -f origin main
 
