@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp8ラベルテキスト.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp8ラベルテキスト"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="500">
+    <StackPanel>
+        <GroupBox Header="グループ1">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Content="ラジオボタン1" GroupName="A" IsChecked="True"/>
+                <RadioButton Content="ラジオボタン2" GroupName="A"/>
+                <RadioButton Content="ラジオボタン3" GroupName="A"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="グループ2">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Content="ラジオボタン1" GroupName="B"/>
+                <RadioButton Content="ラジオボタン2" GroupName="B" IsChecked="True"/>
+                <RadioButton Content="ラジオボタン3" GroupName="B"/>
+            </StackPanel>
+        </GroupBox>
+
+        <Expander Header="Expander" IsExpanded="True">
+            <StackPanel Background="LightGreen">
+                <ComboBox SelectedIndex="1" Margin="5">
+                    <ComboBoxItem Content="あああ"/>
+                    <ComboBoxItem Content="いいい"/>
+                    <ComboBoxItem Content="うううううう"/>
+                </ComboBox>
+                <ListBox SelectedIndex="0" Height="60" Margin="5">
+                    <ListBoxItem Content="かかか"/>
+                    <ListBoxItem Content="きききき"/>
+                    <ListBoxItem Content="くくく"/>
+                    <ListBoxItem Content="けけけ"/>
+                    <ListBoxItem Content="こここここ"/>
+                </ListBox>
+
+            </StackPanel>
+        </Expander>
+
+        <!-- CheckedListBox -->
+        <ListBox SelectedIndex="1" Height="55" Margin="5">
+            <CheckBox Content="さささ"/>
+            <CheckBox Content="ししし"/>
+            <CheckBox Content="すすすすす" IsChecked="True"/>
+        </ListBox>
+    </StackPanel>
+</Window>

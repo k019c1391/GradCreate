@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp7画像ボタン.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7画像ボタン"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Image Height="100" Width="100" Source="/Resources/star.png"/>
+        <Button Content="Button" Height="30" Width="100" Margin="5"/>
+        <Button Height="30" Width="100" Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Resources/star.png"/>
+                <TextBlock Text="ボタン" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+
+        <RepeatButton Content="リピート1" Width="120" Click="RepeatButton_Click" />
+        <RepeatButton Content="リピート2" Width="120" Delay="1000" Click="RepeatButton_Click" />
+        <RepeatButton Content="リピート3" Width="120" Interval="500" Click="RepeatButton_Click" />
+        <TextBlock x:Name="repeatText" Text="1" HorizontalAlignment="Center"/>
+
+        <TextBlock Margin="5">
+            <Hyperlink NavigateUri="http://help.qiita.com/" RequestNavigate="Hyperlink_RequestNavigate">Qiitaヘルプ</Hyperlink>
+        </TextBlock>
+    </StackPanel>
+</Window>

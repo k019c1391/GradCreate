@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WpfApp7画像ボタン/1.0.0": {
+        "runtime": {
+          "WpfApp7画像ボタン.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WpfApp7画像ボタン/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
