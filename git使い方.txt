@@ -6,6 +6,3 @@ git push -f origin main
 
 git fetch origin main
 git reset --hard origin/main
-
-追記したンゴ
-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
