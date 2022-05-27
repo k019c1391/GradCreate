@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp10リストビュー2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp10リストビュー2"
+        mc:Ignorable="d"
+        Title="郵便番号一覧" Height="450" Width="800" ResizeMode="CanResizeWithGrip">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+        <Menu x:Name="menu" Margin="0,0,0,203">
+            <MenuItem Header="ファイル(_F)">
+                <MenuItem x:Name="opneMenu" Header="開く(_O)..." Click="opneMenu_Click"/>
+                <Separator/>
+                <MenuItem x:Name="exitMenu" Header="終了(_X)"/>
+            </MenuItem>
+            <MenuItem Header="編集(_E)">
+                <MenuItem x:Name="clearMenu" Header="クリア(_C)"/>
+            </MenuItem>
+        </Menu>
+        <ListView x:Name="listView" ItemsSource="{Binding Mode=OneWay}" Margin="0,26,0,0" Grid.RowSpan="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="郵便番号" DisplayMemberBinding="{Binding Zip}"/>
+                    <GridViewColumn Header="都道府県名" DisplayMemberBinding="{Binding State}" />
+                    <GridViewColumn Header="市区町村名" DisplayMemberBinding="{Binding City}"/>
+                    <GridViewColumn Header="市区町村名カナ" DisplayMemberBinding="{Binding CityKana}"/>
+                    <GridViewColumn Header="町域名" DisplayMemberBinding="{Binding Town}"/>
+                    <GridViewColumn Header="町域名カナ" DisplayMemberBinding="{Binding TownKana}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>
