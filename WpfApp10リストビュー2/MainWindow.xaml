@@ -6,22 +6,26 @@
         xmlns:local="clr-namespace:WpfApp10リストビュー2"
         mc:Ignorable="d"
         Title="郵便番号一覧" Height="450" Width="800" ResizeMode="CanResizeWithGrip">
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo x:Name="taskbarInfo"/>
+    </Window.TaskbarItemInfo>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="16*"/>
             <RowDefinition Height="15*"/>
         </Grid.RowDefinitions>
-        <Menu x:Name="menu" Margin="0,0,0,203">
+        <Menu x:Name="menu" Margin="0,0,0,178">
             <MenuItem Header="ファイル(_F)">
                 <MenuItem x:Name="opneMenu" Header="開く(_O)..." Click="opneMenu_Click"/>
                 <Separator/>
-                <MenuItem x:Name="exitMenu" Header="終了(_X)"/>
+                <MenuItem x:Name="exitMenu" Header="終了(_X)" Click="exitMenu_Click"/>
             </MenuItem>
             <MenuItem Header="編集(_E)">
-                <MenuItem x:Name="clearMenu" Header="クリア(_C)"/>
+                <MenuItem x:Name="clearMenu" Header="クリア(_C)" Click="clearMenu_Click"/>
             </MenuItem>
         </Menu>
-        <ListView x:Name="listView" ItemsSource="{Binding Mode=OneWay}" Margin="0,26,0,0" Grid.RowSpan="2">
+        <TextBox x:Name="loadingText" TextWrapping="Wrap" Text="now loading..." Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Visibility="Collapsed"/>
+        <ListView x:Name="listView" ItemsSource="{Binding Mode=OneWay}" Margin="0,23,0,0" Grid.RowSpan="2">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="郵便番号" DisplayMemberBinding="{Binding Zip}"/>
