@@ -4,5 +4,8 @@ git add "ファイル名"
 git commit -m "メッセージ"
 git push -f origin main
 
+git pull origin main 
+
+緊急用
 git fetch origin main
 git reset --hard origin/main
